@@ -7,6 +7,7 @@ roles = Blueprint('roles', __name__, url_prefix='/roles')
 @roles.route('/')
 def get_all():
     return RolController.get_all()
+
 @roles.route('/<int:id>')
 def show(id):
     return RolController.show(id)
